@@ -1,0 +1,24 @@
+:root {
+  --fondo: #ffffff;      
+  --texto: #000000;      
+  --primario: #0d6efd;   
+  --exito: #198754;     
+  --alerta: #ffc107;     
+  --peligro: #dc3545;    
+}
+
+[data-tema="oscuro"] {
+  --fondo: #121212;      /* Fondo oscuro */
+  --texto: #f1f1f1;      /* Texto claro */
+  --primario: #0d6efd;
+  --exito: #198754;
+  --alerta: #ffc107;
+  --peligro: #dc3545;
+}
+
+body {
+  background-color: var(--fondo);
+  color: var(--texto);
+  margin: 0;
+  font-family: system-ui, sans-serif;
+}
