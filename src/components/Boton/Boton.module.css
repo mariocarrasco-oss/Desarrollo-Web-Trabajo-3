@@ -1,0 +1,24 @@
+.boton {
+  padding: 0.5rem 1rem;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.2s ease;
+}
+
+.primario {
+  background-color: var(--primario);
+  color: #ffffff;
+}
+
+.secundario {
+  background-color: transparent;
+  border-color: var(--primario);
+  color: var(--texto);
+}
+
+.activo {
+  outline: 2px solid var(--texto);
+  filter: brightness(0.9);
+}

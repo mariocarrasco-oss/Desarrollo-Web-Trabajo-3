@@ -57,3 +57,18 @@
   background-color: var(--primario);
   transition: width 0.3s ease;
 }
+
+/* Soporte para vista en lista */
+.tarjetaHorizontal {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+@media (min-width: 768px) {
+  .tarjetaHorizontal {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
