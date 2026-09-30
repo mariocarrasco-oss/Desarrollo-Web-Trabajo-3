@@ -1,0 +1,59 @@
+.tarjeta {
+  background-color: var(--superficie);
+  color: var(--texto);
+  border: 2px solid transparent;
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  position: relative;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Clases según los datos */
+.disponible {
+  border-color: var(--exito);
+}
+
+.pocos {
+  border-color: var(--alerta);
+}
+
+.completo {
+  border-color: var(--peligro);
+  opacity: 0.6;
+}
+
+/* Clase según el estado (Ver / Ocultar detalles) */
+.expandida {
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+  border-color: var(--primario);
+}
+
+/* Etiqueta condicional "Nuevo" */
+.badgeNuevo {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background-color: var(--primario);
+  color: #fff;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* Contenedor y barra de ocupación */
+.barraContenedor {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  height: 10px;
+  width: 100%;
+  margin: 1rem 0;
+  overflow: hidden;
+}
+
+.barraProgreso {
+  height: 100%;
+  background-color: var(--primario);
+  transition: width 0.3s ease;
+}
